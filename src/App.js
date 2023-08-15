@@ -7,7 +7,7 @@ function App() {
   const [orderBy, setOrderBy] = useState("priority");
 
   useEffect(() => {
-    fetch("https://apimocha.com/quicksell/data")
+    fetch("https://api.quicksell.co/v1/internal/frontend-assignment")
       .then((response) => response.json())
       .then((data) => {
         setData(data);
